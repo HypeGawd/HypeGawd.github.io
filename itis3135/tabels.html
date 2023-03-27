@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 | Raunak Puranik's Romantic Panda | Tables</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    
+        table tr:nth-child(odd) {
+            background-color: #062988;
+            color: rgb(236, 225, 158)
+        }
+    
+        table tr:nth-child(even) {
+            background-color: rgb(79, 161, 238);
+            color: rgb(236, 225, 158)
+        }
+    
+        table tr:first-child {
+            background-color: black;
+            color: rgb(236, 225, 158)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ITIS 3135 | Raunak Puranik's Romantic Panda</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="introduction.html">Introduction</a>
+            <a href="tabels.html">Tables</a>
+            <a href="form.html">Form</a>
+            <a href="contract.html">Contract</a>
+            <a href="website_evaluations.html">Website Evaluations</a>
+            <a href="firstscripts.html">First Javascript</a>
+            <a href="polygon.html">Polygons!</a>
+            <a href="calculator_try.html">Calculator Try</a>
+            <a href="calculator_fcc.html">Calculator FCC</a>
+            <a href="arrays.html">Arrays</a>
+            <a href="slideshow.html">Slideshow</a>
+        </nav>
+        <hr color="blue">
+        <nav>
+            <a target="_blank" href="hobby/index.html">Hobby Site</a>
+            <a target="_blank" href="https://webpages.charlotte.edu/rpuranik/itis3135/sTufF/cRapPyWEbPag!E.htm">CrApPy WeBpAgE!</a>
+            <a target="_blank" href="responsive.html">Responsive Design Example</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Table Page</h2>
+        <h3>"My Tabular Data"</h3>
+        <ol>
+            <li>James Roy jamesroy@gmail.com 3</li>
+            <li>Cathy Jones cathyjones@gmail.com 22</li>
+            <li>Tim Daniels timdaniels@gmail.com 14</li>
+            <li>Jason Dean jasondean@gmail.com 12</li>
+            <li>Sandy Smith sandysmith@gmail.com 8</li>
+            <li>Bob Jones bobjones@gmail.com 2</li>
+            <li>Kim Sandy kimsandy@gmail.com 16</li>
+        </ol>
+        <h3>Employee Data in Simple Table
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>James Roy</td>
+                    <td>jamesroy@gmail.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Cathy Jones</td>
+                    <td>cathyjones@gmail.com</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Tim Daniels</td>
+                    <td>timdaniels@gmail.com</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Jason Dean</td>
+                    <td>jasondean@gmail.com</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Sandy Smith</td>
+                    <td>sandysmith@gmail.com</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Bob Jones</td>
+                    <td>bobjones@gmail.com</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Kim Sandy</td>
+                    <td>kimsandy@gmail.com</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </h3>
+        <h3>Employee Data in Complex Table
+            <figure>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years</th>
+                        <th>Salary</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Marketing</td>
+                        <td>James Roy</td>
+                        <td>jamesroy@gmail.com</td>
+                        <td>3</td>
+                        <td>$82,000</td>
+                    </tr>
+                    <tr>
+                        <td>Cathy Jones</td>
+                        <td>cathyjones@gmail.com</td>
+                        <td>22</td>
+                        <td>$261,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tim Daniels</td>
+                        <td>timdaniels@gmail.com</td>
+                        <td>14</td>
+                        <td>$172,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sales</td>
+                        <td>Jason Dean</td>
+                        <td>jasondean@gmail.com</td>
+                        <td>12</td>
+                        <td>$125,000</td>
+                    </tr>
+                    <tr>
+                        <td>Sandy Smith</td>
+                        <td>sandysmith@gmail.com</td>
+                        <td>8</td>
+                        <td>$97,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">HR</td>
+                        <td>Bob Jones</td>
+                        <td>bobjones@gmail.com</td>
+                        <td>2</td>
+                        <td>$54,000</td>
+                    </tr>
+                    <tr>
+                        <td>Kim Sandy</td>
+                        <td>kimsandy@gmail.com</td>
+                        <td>16</td>
+                        <td>$143,000</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total Years and Salary</th>
+                        <td> 77</td>
+                        <td> $934,000</td>
+                    </tr>
+                </table>
+                <figcaption>Here is some Employee Information</figcaption>
+            </figure>
+        </h3>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/rpuranik/">CLT Home</a>
+            <a href="https://github.com/HypeGawd">GitHub</a>
+            <a href="https://www.freecodecamp.org/RaunakPuranik">FreeCodeCamp</a>
+            <a href="https://www.codecademy.com/profiles/java8143825342">Codecademy</a>
+            <a href="https://www.linkedin.com/in/raunak-puranik-64873b152/">LinkedIn</a>
+        </nav>
+        <a target="_blank" href="https://webpages.charlotte.edu/rpuranik/itis3135/RomanticPandaWebServices.com/index.html">Copyright
+            © 2023
+            Romantic Panda Web Services</a>
+    </footer>
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"
+            alt="Validate Webpage HTML!" />
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Validate Webpage CSS!" />
+    </a>
+</body>
+
+</html>

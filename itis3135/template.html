@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template With Navigation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="siteLinks">Nav Links Here</nav>
+        <h1>Template With Navigation</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui est facere, quam asperiores, amet accusantium
+            incidunt quae porro officiis dolores odit itaque molestiae illum esse consequuntur accusamus ducimus quidem
+            voluptas!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nostrum deserunt neque necessitatibus officiis,
+            nobis debitis, quia, eaque est nesciunt quas ducimus ratione voluptas. Rerum sequi repellat ab velit nobis!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In reiciendis rem quaerat nemo corrupti
+            reprehenderit voluptatum repudiandae eligendi repellendus dignissimos? Cumque rem expedita repellendus
+            laborum, ipsa nesciunt laboriosam assumenda nisi?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, saepe magni cumque porro sequi rerum
+            voluptate pariatur suscipit repellat? Harum sit fugit necessitatibus doloremque sed asperiores eaque
+            molestias iusto facilis.</p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        $(function () {
+            console.log("made it here")
+            console.log(location.pathname);
+            console.log(location.pathname.split("/").splice(-1))
+            const pathname = String(location.pathname.split("/").splice(-1));
+
+            const links = {
+                "1": {
+                    "url": "index.html",
+                    "text": "Home",
+                    "alt": "Example Homepage"
+                },
+                "2": {
+                    "url": "introduction.html",
+                    "text": "Introduction",
+                    "alt": "Example Introduction"
+                },
+                "3": {
+                    "url": "tabels.html",
+                    "text": "Tabels",
+                    "alt": "Example Tabels"
+                },
+                "4": {
+                    "url": "form.html",
+                    "text": "Form",
+                    "alt": "Example Form"
+                },
+                "5": {
+                    "url": "contract.html",
+                    "text": "Contract",
+                    "alt": "Example Contract"
+                },
+                "6": {
+                    "url": "website_evaluations.html",
+                    "text": "Website Evaluations",
+                    "alt": "Example Website Evaluations"
+                }
+            };
+
+            const linkSeperator = " | ";
+            let htmlString = "";
+
+            for(var id in links){
+                if(pathname === links[id]['url']){
+                    htmlString += links[id]['text'];
+                }
+                else{
+                    htmlString += '<a href="' + links[id]['url'] + '">' + links[id]['text'] + '</a>';
+                }
+                if(Number(id) < Object.keys(links).length){
+                    htmlString += linkSeperator;
+                }
+            }
+
+            $('#siteLinks').html(htmlString);
+        });
+    </script>
+</body>
+
+</html>
